@@ -5,7 +5,7 @@ description: Transform short-form video references (TikTok, Reels, YouTube Short
 
 # Content Producer V2
 
-Replicate the production workflow for Rafael: transcribe source content, adapt to PT-BR, rewrite with the canonical roteiro optimization prompt, and then either save to vault or review in chat.
+Replicate the production workflow for the user: transcribe source content, adapt to PT-BR, rewrite with the canonical roteiro optimization prompt, and then either save to vault or review in chat.
 
 ## Workflow Decision
 
@@ -52,7 +52,7 @@ After generating the script, ask exactly:
 
 ### 2) Vault output format
 Path:
-- `/data/.openclaw/vault/Claw/conteudo/YYYY-MM-DD.md`
+- `/path/to/your/vault/Claw/conteudo/YYYY-MM-DD.md`
 
 Append each processed video using:
 
@@ -79,7 +79,7 @@ Rules:
 After writing the file, run:
 
 ```bash
-bash /data/.openclaw/scripts/sync-vault.sh
+bash /path/to/your/scripts/sync-vault.sh
 ```
 
 Then confirm success status to user.
